@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  form.form-horizontal(action='new', method='post')
+    fieldset
+      legend Create Item
+
+      .form-group
+        label.col-md-4.control-label(for='textinput') Item
+        .col-md-4
+          input#myInputField.form-control.input-md(name='myInputField', type='text', placeholder='placeholder', required='')
+          span.help-block enter the item to create
